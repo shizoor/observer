@@ -1,0 +1,14 @@
+Z:\challenges\sony-observer\sony-observer\bin\Debug\net8.0\sony-observer.exe
+Z:\challenges\sony-observer\sony-observer\bin\Debug\net8.0\sony-observer.deps.json
+Z:\challenges\sony-observer\sony-observer\bin\Debug\net8.0\sony-observer.runtimeconfig.json
+Z:\challenges\sony-observer\sony-observer\bin\Debug\net8.0\sony-observer.dll
+Z:\challenges\sony-observer\sony-observer\bin\Debug\net8.0\sony-observer.pdb
+Z:\challenges\sony-observer\sony-observer\obj\Debug\net8.0\sony-observer.GeneratedMSBuildEditorConfig.editorconfig
+Z:\challenges\sony-observer\sony-observer\obj\Debug\net8.0\sony-observer.AssemblyInfoInputs.cache
+Z:\challenges\sony-observer\sony-observer\obj\Debug\net8.0\sony-observer.AssemblyInfo.cs
+Z:\challenges\sony-observer\sony-observer\obj\Debug\net8.0\sony-observer.csproj.CoreCompileInputs.cache
+Z:\challenges\sony-observer\sony-observer\obj\Debug\net8.0\sony-observer.dll
+Z:\challenges\sony-observer\sony-observer\obj\Debug\net8.0\refint\sony-observer.dll
+Z:\challenges\sony-observer\sony-observer\obj\Debug\net8.0\sony-observer.pdb
+Z:\challenges\sony-observer\sony-observer\obj\Debug\net8.0\sony-observer.genruntimeconfig.cache
+Z:\challenges\sony-observer\sony-observer\obj\Debug\net8.0\ref\sony-observer.dll
