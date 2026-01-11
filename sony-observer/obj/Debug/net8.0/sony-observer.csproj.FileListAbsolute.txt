@@ -12,3 +12,4 @@ Z:\challenges\sony-observer\sony-observer\obj\Debug\net8.0\refint\sony-observer.
 Z:\challenges\sony-observer\sony-observer\obj\Debug\net8.0\sony-observer.pdb
 Z:\challenges\sony-observer\sony-observer\obj\Debug\net8.0\sony-observer.genruntimeconfig.cache
 Z:\challenges\sony-observer\sony-observer\obj\Debug\net8.0\ref\sony-observer.dll
+Z:\challenges\sony-observer\sony-observer\obj\Debug\net8.0\sony-observer.sourcelink.json

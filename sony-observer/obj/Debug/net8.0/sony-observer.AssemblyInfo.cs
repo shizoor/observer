@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("sony-observer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e834aa7d3ca6637ebbca7346aaaca1f7ce36bd4")]
 [assembly: System.Reflection.AssemblyProductAttribute("sony-observer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("sony-observer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

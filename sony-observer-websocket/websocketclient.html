@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Javascript Websocket Client</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+</head>
+<body>
+    <script>
+
+        function isJsonString(str) {
+            try {
+                JSON.parse(str);
+                
+            } catch (e) {
+                return false;
+            }
+            return true;
+        }
+        let echo_service;
+        append = function (text) {
+            document
+                .getElementById("websocket_events")
+                .insertAdjacentHTML("beforeend", "<li>" + text + ";</li>");
+        };
+        window.onload = function () {
+            document.getElementById("Machine A").style.backgroundColor = "yellow";
+            document.getElementById("Machine B").style.backgroundColor = "yellow";
+            document.getElementById("Machine C").style.backgroundColor = "yellow";
+            echo_service = new WebSocket("ws://127.0.0.1:7878/Dashboard");
+            echo_service.onmessage = function (event) {
+                if (isJsonString(event.data)) {
+                    jsonobject = JSON.parse(event.data);
+                    document.getElementById(jsonobject.machinename).value = jsonobject.machinename + " : " + jsonobject.state;
+                    switch (jsonobject.state) {
+                        case "idle":
+                            document.getElementById(jsonobject.machinename).style.backgroundColor = "yellow";
+                            break;
+                        case "producing":
+                            document.getElementById(jsonobject.machinename).style.backgroundColor = "green";
+                            break;
+                        case "starved":
+                            document.getElementById(jsonobject.machinename).style.backgroundColor = "red";
+                            break;
+                        default:
+                            document.getElementById(jsonobject.machinename).style.backgroundColor = "orange";
+                    }
+                }
+                else {
+                    append(event.data);
+                }
+            };
+            echo_service.onopen = function () {
+                append("🚀 Connected to WebSocket!");
+            };
+            echo_service.onclose = function () {
+                append("Connection closed");
+            };
+            echo_service.onerror = function () {
+                append("Error happens");
+            };
+        };
+
+
+    </script>
+    <main class="container">
+        <div> <input type="button" id="Machine A" value="idle"  /> </div>
+        <div> <input type="button" id="Machine B" value="idle"  /> </div>
+        <div> <input type="button" id="Machine C" value="idle"  /> </div>
+
+        <ul id="websocket_events"></ul>
+    </main>
+</body>
+</html>
