@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "Z:\\challenges\\sony-observer-websocket\\",
+  "WorkspaceRootPath": "Z:\\challenges\\sony-observer\\sony-observer-websocket\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C42C4CC7-2262-4CDB-AAA6-07CA7A88D98E}|sony-observer-websocket.csproj|z:\\challenges\\sony-observer-websocket\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C42C4CC7-2262-4CDB-AAA6-07CA7A88D98E}|sony-observer-websocket.csproj|z:\\challenges\\sony-observer\\sony-observer-websocket\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C42C4CC7-2262-4CDB-AAA6-07CA7A88D98E}|sony-observer-websocket.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "Z:\\challenges\\sony-observer-websocket\\Program.cs",
+              "DocumentMoniker": "Z:\\challenges\\sony-observer\\sony-observer-websocket\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "Z:\\challenges\\sony-observer-websocket\\Program.cs",
+              "ToolTip": "Z:\\challenges\\sony-observer\\sony-observer-websocket\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAIgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAAAIgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-08T16:24:54.776Z",
               "EditorCaption": ""

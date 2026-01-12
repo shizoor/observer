@@ -6,7 +6,7 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using WebSocketSharp;
-using WebSocketSharp.Server; 
+using WebSocketSharp.Server;
 
 namespace sony_observer_websocket
 {
@@ -71,7 +71,8 @@ namespace sony_observer_websocket
 
         }
 
-        class Dashbard : Observer {
+        class Dashbard : Observer
+        {
             public override void Update(string state, string from)
             {
                 base.Update(state, from);
@@ -89,7 +90,7 @@ namespace sony_observer_websocket
             }
 
         }
-       
+
 
         public static void Main(string[] args)
         {
@@ -106,7 +107,7 @@ namespace sony_observer_websocket
             a.name = "test";
 
             Machine[] machines = new Machine[3];
-            for (int i=0; i<3; i++)
+            for (int i = 0; i < 3; i++)
             {
                 machines[i] = new Machine();
             }
@@ -117,10 +118,13 @@ namespace sony_observer_websocket
             machines[2].name = "Machine C";
             machines[2].AttachObserver(d);
 
-            while (true) {
-                for (int i = 0; i < 3; i++) {
+            while (true)
+            {
+                for (int i = 0; i < 3; i++)
+                {
                     int q = rnd.Next(0, 3);
-                    switch (q) {
+                    switch (q)
+                    {
                         case 0:
                             machines[i].state = "idle";
                             break;
@@ -131,36 +135,16 @@ namespace sony_observer_websocket
                             machines[i].state = "starved";
                             break;
                     }
-                    
-                }
-                for (int i=0; i<3; i++) machines[i].NotifyAllObservers();
 
-                System.Console.WriteLine("sleeping for 10 secs");
+                }
+                for (int i = 0; i < 3; i++) machines[i].NotifyAllObservers();
+
+                System.Console.WriteLine("sleeping for 1 second");
                 System.Threading.Thread.Sleep(1000);
 
             }
             //wssv.Stop();
 
-            /*Employee e = new Employee();
-            Employee f = new Employee();
-            f.role = "technician";
-            f.name = "Ian";
-            e.role = "tech";
-            e.name = "Douglas";
-            Machine m = new Machine();
-            m.name = "soldermachine1";
-            m.AttachObserver(e);
-            m.SetState("starved");
-            m.NotifyAllObservers();
-            m.SetState("producing");
-            m.AttachObserver(f);
-            m.NotifyAllObservers();
-            m.SetState("idle");
-            m.NotifyAllObservers();
-            Console.WriteLine("finished");
-            m.RemoveObserver(e);
-            m.NotifyAllObservers();
-            */
 
         }
     }
